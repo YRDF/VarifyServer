@@ -9,12 +9,12 @@ async function GetVarifyCode(call, callback) {
     try{
         uniqueId = uuidv4();
         console.log("uniqueId is ", uniqueId)
-        let text_str =  'ÄúµÄÑéÖ¤ÂëÎª'+ uniqueId +'ÇëÈı·ÖÖÓÄÚÍê³É×¢²á'
-        //·¢ËÍÓÊ¼ş
+        let text_str =  'æ‚¨çš„éªŒè¯ç ä¸º'+ uniqueId +'è¯·ä¸‰åˆ†é’Ÿå†…å®Œæˆæ³¨å†Œ'
+        //å‘é€é‚®ä»¶
         let mailOptions = {
             from: 'zzh567756@163.com',
             to: call.request.email,
-            subject: 'ÑéÖ¤Âë',
+            subject: 'éªŒè¯ç ',
             text: text_str,
         };
 
